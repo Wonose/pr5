@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+
+  <body>
+    <button>Д. Байрон</button>
+    <button>Г. Сковорода</button>
+    <button>Д. Лихачев</button>
+    <button>Горацій</button>
+    <button>Цицерон</button>
+    <script>
+      const quotes = [
+        "Той, хто не любить своєї країни, нічого любити не може",
+        `Кожному мила своя сторона.`,
+        "Усвідомлена любов до свого народу не поєднується з ненавистю до інших.",
+         "Ті, що виїздять за море, міняють небо, а не душу.",
+        "Для нас дорогі батьки, дорогі діти, близькі, родичі; але всі уявлення про любов до чого-небудь поєднані в одному слові «вітчизна».",
+      ];
+      document.querySelectorAll("button").forEach((el, i) => {
+        el.onclick = () => alert(quotes[i]);
+      });
+    </script>
+  </body>
+</html>
